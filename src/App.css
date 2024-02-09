@@ -1,6 +1,30 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.search-results {
+  display: flex;
+  max-width: 600px;
+  max-height: 400px;
+  width: 600px;
+  flex-direction: column;
+  gap: 2rem;
+  flex-grow: 0;
+  overflow-y: scroll;
+}
+
+.search-results .search-result-title em {
+  font-weight: 800;
+
+}
+
+.search-results .search-result-text em {
+  font-weight: 800;
+  background-color: yellow;
+}
+
 
 .App-logo {
   height: 40vmin;
