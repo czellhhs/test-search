@@ -68,7 +68,7 @@ function App() {
       <div className="search-results">
         {/* Display results... since we want highlighted results, and ES embeds <em/> tags for the
         highlighted hits, we need to use a cheap and easy way to honor that styling... hence dangerouslySetInnerHTML :( */}
-        {results?.hits.hits.map((h) => (
+        {results?.hits?.hits?.map((h) => (
           <span style={{ display: "flex", flexDirection: "column" }}>
             {/* Link the title of the article to the full slug */}
             <a href={h._source.fullSlug}>
